@@ -1,0 +1,154 @@
+
+div {
+  padding: 0px !important;
+}
+
+ul {
+  margin: 0px !important;
+}
+
+p {
+  margin: 0px !important;
+}
+
+div.content {
+  display: none;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+div.leftin {
+  -webkit-animation-duration: .4s;
+  -webkit-animation-name: leftin;
+}
+
+div.rightin {
+  -webkit-animation-duration: .4s;
+  -webkit-animation-name: rightin;
+}
+
+
+@-Webkit-keyframes leftin {
+  from { 
+    -webkit-transform: translateX(100%);
+  }
+  to { 
+    -webkit-transform: translateX(0);
+   }
+}
+
+
+@-webkit-keyframes rightin {
+  from { 
+    -webkit-transform: translateX(-100%);
+  }
+  to { 
+    -webkit-transform: translateX(0);
+   }
+}
+
+
+
+
+.custom-tabbar .ui-btn .ui-btn-inner { 
+    padding-top: 40px !important; 
+}
+
+.custom-tabbar .ui-btn .ui-icon { 
+    width: 40px!important; height: 30px!important; margin-left: -20px !important; 
+    box-shadow: none!important; -moz-box-shadow: none!important; 
+    -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; 
+    border-radius: 0 !important; 
+}
+
+
+li .ui-icon {
+    margin-top: 6px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+    background-color: transparent;
+    background-size: auto 100%;
+}
+
+
+
+div.content-area {
+    padding: 10px !important;
+}
+
+.charthbar {
+    height: 10px;
+    width: 20px;
+}
+
+#sense_accel_x { background-color: red; }
+#sense_accel_y { background-color: green; }
+#sense_accel_z { background-color: blue; }
+
+
+
+#tab_hometab .ui-icon { background-image: url(../img/home-lo.png) }
+#tab_hometab.ui-btn-active .ui-icon { background-image: url(../img/home-hi.png) }
+
+#tab_capture .ui-icon { background-image: url(../img/camera-lo.png) }
+#tab_capture.ui-btn-active .ui-icon { background-image: url(../img/camera-hi.png) }
+
+#tab_share .ui-icon { background-image: url(../img/share-lo.png) }
+#tab_share.ui-btn-active .ui-icon { background-image: url(../img/share-hi.png) }
+
+#tab_map .ui-icon { background-image: url(../img/earth-lo.png) }
+#tab_map.ui-btn-active .ui-icon { background-image: url(../img/earth-hi.png) }
+
+#tab_info .ui-icon { background-image: url(../img/info-lo.png) }
+#tab_info.ui-btn-active .ui-icon { background-image: url(../img/info-hi.png) }
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+#tab_hometab .ui-icon { background-image: url(../img/home-lo@2x.png) }
+#tab_hometab.ui-btn-active .ui-icon { background-image: url(../img/home-hi@2x.png) }
+
+#tab_capture .ui-icon { background-image: url(../img/camera-lo@2x.png) }
+#tab_capture.ui-btn-active .ui-icon { background-image: url(../img/camera-hi@2x.png) }
+
+#tab_share .ui-icon { background-image: url(../img/share-lo@2x.png) }
+#tab_share.ui-btn-active .ui-icon { background-image: url(../img/share-hi@2x.png) }
+
+#tab_map .ui-icon { background-image: url(../img/earth-lo@2x.png); }
+#tab_map.ui-btn-active .ui-icon { background-image: url(../img/earth-hi@2x.png) }
+
+#tab_info .ui-icon { background-image: url(../img/info-lo@2x.png) }
+#tab_info.ui-btn-active .ui-icon { background-image: url(../img/info-hi@2x.png) }
+
+}
+
+
+a.social_login {
+  height: 74px;
+  line-height: 48px;
+  font-size: 20px;
+}
+
+a.twitter_login {
+    background: #FFF url("../img/twt-64.png") no-repeat 10px 5px;
+}
+
+a.facebook_login {
+    background: #FFF url("../img/fbk-64.png") no-repeat 10px 5px;
+}
+
+
+a.twitter_msg {
+    background: #FFF url("../img/twt-16.png") no-repeat 6px 6px;
+}
+
+a.facebook_msg {
+    background: #FFF url("../img/fbk-16.png") no-repeat 6px 6px;
+}
+
+
+
+#header_logout {
+    display: none;
+}
