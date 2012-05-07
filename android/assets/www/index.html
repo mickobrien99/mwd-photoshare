@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html> 
 	<head>
 	  <title>photoshare</title>
@@ -7,10 +7,10 @@
 	  <meta name="apple-mobile-web-app-capable" content="yes" />
 	  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-	  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="photoshare-apple-touch-icon-114x114-precomposed.png">
-	  <link rel="apple-touch-icon-precomposed" href="photoshare-apple-touch-icon-precomposed.png">
-	  <link rel="apple-touch-startup-image" href="photoshare-splash-320x460.png" />
-	  <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="photoshare-splash-640x920.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/photoshare-apple-touch-icon-114x114-precomposed.png">
+	  <link rel="apple-touch-icon-precomposed" href="img/photoshare-apple-touch-icon-precomposed.png">
+	  <link rel="apple-touch-startup-image" href="img/photoshare-splash-320x460.png" />
+	  <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="img/photoshare-splash-640x920.png" />
 
 	  <link rel="stylesheet" href="css/jquery.mobile.css" />
 	  <link rel="stylesheet" href="css/jquery.mobile.structure.css" />
@@ -40,21 +40,14 @@
 				<div id="content_hometab" class="content scroller">
 					<div class="content-area">
 						<h3>Home</h3>
-						<div data-role="controlgroup">
-						  <a id="hometab_accel_watch" data-role="button" data-inline="true">Watch</a>
-						  <a id="hometab_accel_stop"  data-role="button" data-inline="true">Stop</a>
-						</div>
+						<img id="imgHome1" ></img>
+						<script type="text/javascript" style="width:300px"> 
 
-						<div class="ui-grid-a">
-							<div class="ui-block-a">X: <span id="hometab_accel_x_val"></span></div>
-							<div class="ui-block-b"><div id="hometab_accel_x" class="charthbar"></div></div>
-							<div class="ui-block-a">Y: <span id="hometab_accel_y_val"></span></div>
-							<div class="ui-block-b"><div id="hometab_accel_y" class="charthbar"></div></div>
-							<div class="ui-block-a">Z: <span id="hometab_accel_z_val"></span></div>
-							<div class="ui-block-b"><div id="hometab_accel_z" class="charthbar"></div></div>
-						</div>
-						<h3>Button</h3>
-						<p id="hometab_button"></p>
+							var images = ['Great_Wall_of_China.gif', 'Uluru.gif', 'eiffel_tower.gif', 'niagara-2.gif', 'pyramid_sphinx.gif', 'statue_of_liberty.gif']; 
+
+							$('#imgHome1').attr({src:'https://s3-eu-west-1.amazonaws.com/mickobrien99photoshare/' + images[Math.floor(Math.random() * images.length)]});
+
+						</script>
 					</div>
 				</div>
 
@@ -64,10 +57,8 @@
 						<a id="capture_image" data-role="button">Take a Photo</a>
 						<a id="select_image" data-role="button">Select a Photo</a>
 						<a id="upload_image" data-role="button">Upload Photo</a>
-						<h3>Play</h3>
+						<br/>
 						<img id="display_image" style="width:300px">
-						<!-- <a id="capture_video_play" rel="external" style="display:none" data-role="button">Play Video</a>
-						<a id="capture_audio_play" rel="external" style="display:none" data-role="button">Play Audio</a> --> 
 					</div>
 				</div>
 
@@ -93,15 +84,13 @@
 						<h3>App Info</h3>
 						<div class="ui-grid-a">
 							<div class="ui-block-a">name:</div>
-							<div class="ui-block-b"><span id="phonegap_name"></span></div>
-							<div class="ui-block-a">phonegap:</div>
-							<div class="ui-block-b"><span id="phonegap_phonegap"></span></div>
-							<div class="ui-block-a">platform:</div>
-							<div class="ui-block-b"><span id="phonegap_platform"></span></div>
-							<div class="ui-block-a">uuid:</div>
-							<div class="ui-block-b"><span id="phonegap_uuid"></span></div>
-							<div class="ui-block-a">version:</div>
-							<div class="ui-block-b"><span id="phonegap_version"></span></div>
+							<div class="ui-block-b">mick o brien</span></div>
+							<div class="ui-block-a">student no:</div>
+							<div class="ui-block-b">98273850</div>
+							<div class="ui-block-a">app developed for:</div>
+							<div class="ui-block-b">webos, hybrid - android</div>
+							<div class="ui-block-a">hosted:</div>
+							<div class="ui-block-b">amazon ec2 and s3</div>
 						</div>
 					</div>
 				</div>
@@ -110,7 +99,7 @@
 			<div id="footer" data-role="footer" class="ui-bar custom-tabbar" data-position="fixed" data-fullscreen="true">
 				<div data-role="navbar" class="ui-navbar">
 					<ul id="tabbar" class="ui-grid custom-tabbar">
-						<li><a id="tab_hometab"  data-icon="custom">View</a></li>
+						<li><a id="tab_hometab"  data-icon="custom">Home</a></li>
 						<li><a id="tab_capture"  data-icon="custom">Capture</a></li>
 						<li><a id="tab_share"    data-icon="custom">Share</a></li>
 						<li><a id="tab_map"      data-icon="custom">Map</a></li>

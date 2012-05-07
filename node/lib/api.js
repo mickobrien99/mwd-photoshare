@@ -8,7 +8,6 @@ var url = require("url");
 var multipart = require("multipart");
 var util = require("util");
 var events = require("events");
-//var posix = require("posix");
 
 var twitter    = common.twitter
 var facebook   = common.facebook
@@ -95,7 +94,7 @@ exports.social_msg = function( req, res, next, when ) {
 
     send_social_msg[user.service]( 
       user, 
-      'Burning out on '+d+'! Better get back to work... ', 
+      'Check out this cool mobile web app photoshare ... take pics and share them. See photos shared by others. http://ec2-46-51-152-146.eu-west-1.compute.amazonaws.com/photoshare/', 
       function(ok) {
         common.util.sendjson(res,{ok:ok})
       }
