@@ -9,7 +9,7 @@ exports.everyauth  = require('everyauth')
 exports.twitter    = require('twitter')
 exports.facebook   = require('facebook-client')
 
-exports.DataCapsule = require('data-capsule')
+exports.DataCapsule = require('datacapsule')
 
 
 exports.config = require('./config.mine')
